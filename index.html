@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatu</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/century-gothic-paneuropean');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .white {
+            font-family: 'Roboto Condensed', Arial, sans-serif;
+            color: #fff5f5;
+            font-size: 22px;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+        }
+        .main_banner {
+            height: 900px;
+            background-position: center center;
+            background-attachment: scroll;
+            background-image: url(img/banner.jpg);
+            background-color: rgba(23, 22, 20, 0.7);
+            background-blend-mode: overlay;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .main {
+            margin-left: 179.5px;
+        }
+        .heading {
+            padding-top: 71px;
+            max-width: 775px;
+            font-family: 'Century Gothic Paneuropean', sans-serif;
+            color: #ce9b66;
+            font-size: 60px;
+            line-height: 1;
+            font-weight: 700;
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+        }
+        .list {
+            padding-top: 15px;
+            line-height: 1.55;
+            font-weight: 400;
+        }
+        .list_item {
+            display: flex;
+        }
+        .dot {
+            color: rgb(183, 150, 71);
+        }
+        .list_text {
+            margin-left: 3px;
+        }
+        .heading_form {
+            padding-top: 60px;
+        }
+        .price_back {
+            color: #fff5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 7px;
+            width: 452px;
+            height: 80px;
+            border-radius: 10px;
+            background-color: #ce9b66;
+            text-decoration: none;
+            line-height: 1.55;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        .price_back:hover {
+            background-color: #fff5f5;
+            color: #ce9b66;
+        }
+        .bonus_heading {
+            margin-top: 20px;
+        }
+        .bonus {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1160px;
+            height: 110px;
+            border-radius: 10px;
+            background-color: rgba(112, 105, 99, 0.7);
+            background-position: center center;
+            border-color: transparent;
+            border-style: solid;
+        }
+        .bonus_img {
+            margin-left: 5px;
+        }
+        .bonus_text {
+            width: 200px;
+            margin-left: 10px;
+        }
+        .footer_text {
+            margin-top: 20px;
+            color: #ce9b66;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                display: flex;
+                align-items: center;
+            }
+            .main {
+                margin-left: 3px;
+            }
+        }
+    </style>
+    <div class="main_banner">
+        <div class="main">
+            <h1 class="heading">Студия художественной татуировки Tattoo-Leader в центре Москвы</h1>
+            <div class="list white">
+                <div class="list_item">
+                    <span class="dot">•</span>
+                    <p class="list_text">Мастера — победители российских и европейских фестивалей</p>
+                </div>
+                <div class="list_item">
+                    <span class="dot">•</span>
+                    <p class="list_text">Татуировки в любом стиле и масштабе</p>
+                </div>
+                <div class="list_item">
+                    <span class="dot">•</span>
+                    <p class="list_text">Гарантия качества и безопасности</p>
+                </div>
+                <div class="list_item">
+                    <span class="dot">•</span>
+                    <p class="list_text">1000+ довольных клиентов, реальные отзывы</p>
+                </div>
+            </div>
+            <div class="heading_form white">Рассчитайте стоимость татуировки за 2 минуты:</div>
+            <a href="#" class="price_back white">
+                РАССЧИТАТЬ СТОИМОСТЬ
+            </a>
+            <div class="bonus_heading white">В конце теста вас ждут бонусы:</div>
+            <div class="bonus">
+                    <img class="bonus_img" src="img/verified.svg" alt="">
+                    <p class="white bonus_text">Расчёт стоимости вашей татуировки</p>
+                    <img class="bonus_img" src="img/verified.svg" alt="">
+                    <p class="white bonus_text">Скидка 10% на сеанс</p>
+                    <img class="bonus_img" src="img/verified.svg" alt="">
+                    <p class="white bonus_text" style="width: 280px;">Разработка индивидуального эскиза в подарок</p>
+                    <img src="img/logo.png" alt="" style="width: 13%; margin-left: 40px;">
+            </div>
+            <div class="white footer_text">
+                Мы делаем татуировки, за которые не стыдно!
+            </div>
+        </div>
+    </div>
+</body>
+</html>

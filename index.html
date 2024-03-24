@@ -105,7 +105,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            max-width: 1060px;
+            max-width: 1160px;
             height: 110px;
             border-radius: 10px;
             background-color: rgba(112, 105, 99, 0.7);
@@ -129,9 +129,18 @@
             font-size: 25px;
             font-weight: 400;
         }
+        .arr {
+            display: none;
+        }
+        .ind {
+            width: 290px;
+        }
         @media only screen and (max-width: 500px) {
             * {
                 line-height: 22px;
+            }
+            .arr {
+                display: block;
             }
             .main {
                 margin-left: 1px;
@@ -161,26 +170,27 @@
                 width: 290px;
                 text-align: center;
             }
-            .heading_form {
-                padding-bottom: 10px;
-                margin-left: 60px;
-                font-size: 14px;
-            }
             .list {
                 margin-left: 60px;
-                width: 240px;
+                width: 300px;
                 line-height: normal;
             }
             .list_text {
                 font-size: 14px;
             }
+            .heading_form {
+                padding-top: 25px;
+                padding-bottom: 10px;
+                margin-left: 60px;
+                font-size: 14px;
+            }
             .price_back {
                 margin: 0 auto;
                 max-width: 320px;
+                height: 60px;
                 font-size: 14px;
             }
             .bonus_heading {
-                padding-top: 25px;
                 font-size: 14px;
                 margin-left: 60px;
                 padding-bottom: 10px;
@@ -214,6 +224,9 @@
                 font-size: 14px;
                 padding-bottom: 15px;
             }
+            .ind {
+                width: 180px;
+            }
         }
     </style>
     <div class="main_banner">
@@ -223,7 +236,7 @@
             <div class="list white">
                 <div class="list_item">
                     <span class="dot">•</span>
-                    <p class="list_text">Мастера — победители российских и европейских фестивалей</p>
+                    <p class="list_text">Мастера — победители российских <br class="arr"> и европейских фестивалей</p>
                 </div>
                 <div class="list_item">
                     <span class="dot">•</span>
@@ -255,7 +268,7 @@
                     </div>
                     <div class="bonus_item">
                         <img class="bonus_img" src="img/verified.svg" alt="">
-                        <p class="white bonus_text" style="width: 180px;">Разработка индивидуального эскиза в подарок</p>
+                        <p class="white bonus_text ind">Разработка индивидуального эскиза в подарок</p>
                     </div>
                     <img src="img/logo.png" alt="" class="bonus_img_logo" style="width: 13%; margin-left: 40px;">
                 </div>

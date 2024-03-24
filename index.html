@@ -125,12 +125,11 @@
                 align-items: center;
             }
             .main {
-                
+                margin-left: 30px;
             }
             .main_banner {
                 max-width: 500px;
                 height: auto;
-                margin: 0 auto;
                 background-attachment: scroll;
                 background-image: url(img/banner.jpg);
                 background-color: rgba(23, 22, 20, 0.7);
@@ -154,6 +153,9 @@
                 width: 290px;
                 text-align: center;
             }
+            .heading_form {
+                font-size: 14px;
+            }
             .list {
                 margin-left: 55px;
                 width: 220px;
@@ -161,10 +163,37 @@
             }
             .list_text {
                 font-size: 14px;
-                line-height: 22px;
             }
             .price_back {
-                width: 300px;
+                width: 270px;
+                font-size: 14px;
+            }
+            .bonus_heading {
+                font-size: 14px;
+            }
+            .bonus {
+                display: block;
+                max-width: 270px;
+                height: 230px;
+            }
+            .bonus_heading {
+                font-size: 14px;
+            }
+            .bonus_item {
+                display: flex;
+                padding: 15px;
+            }
+            .bonus_text {
+                font-size: 14px;
+                width: 120px;
+            }
+            .bonus_img {
+                width: 30px;
+            }
+            .bonus_img_logo {
+                display: none;
+            }
+            .footer_text {
                 font-size: 14px;
             }
         }
@@ -197,13 +226,19 @@
             </a>
             <div class="bonus_heading white">В конце теста вас ждут бонусы:</div>
             <div class="bonus">
+                <div class="bonus_item">
                     <img class="bonus_img" src="img/verified.svg" alt="">
                     <p class="white bonus_text">Расчёт стоимости вашей татуировки</p>
+                </div>
+                <div class="bonus_item">
                     <img class="bonus_img" src="img/verified.svg" alt="">
                     <p class="white bonus_text">Скидка 10% на сеанс</p>
+                </div>
+                <div class="bonus_item">
                     <img class="bonus_img" src="img/verified.svg" alt="">
-                    <p class="white bonus_text" style="width: 280px;">Разработка индивидуального эскиза в подарок</p>
-                    <img src="img/logo.png" alt="" style="width: 13%; margin-left: 40px;">
+                    <p class="white bonus_text">Разработка индивидуального эскиза в подарок</p>
+                </div>
+                <img src="img/logo.png" alt="" class="bonus_img_logo" style="width: 13%; margin-left: 40px;">
             </div>
             <div class="white footer_text">
                 Мы делаем татуировки, за которые не стыдно!
